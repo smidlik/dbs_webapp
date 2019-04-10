@@ -1,13 +1,14 @@
-import React from'react';
+import React from 'react';
+import Content from '../components/Content';
 
-class LandingPage extends React.Component{
+
+class HomePage extends React.Component {
+
     render() {
         return (
-            <div>
-                TEST
-            </div>
+                <Content />
         );
     }
 }
 
-export default LandingPage;
+export default HomePage;

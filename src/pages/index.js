@@ -1,6 +1,5 @@
-
 import HomePage from './HomePage';
-import SignInPage from"./SignInPage"
+import Result from './Result';
+import Patient from './Patient';
 
-
-export {HomePage,SignInPage};
+export { HomePage, Result, Patient };
