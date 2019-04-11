@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import ApplicationBar from './components/ApplicationBar';
-import {HomePage, Patient, Result} from './pages';
+import NavBar from './components/NavBar';
+import {HomePage, Login, CreateCompetition} from './pages';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 
@@ -9,12 +9,12 @@ class App extends Component {
     render() {
         return (
             <div className={'Body'}>
-                <ApplicationBar/>
+                <NavBar/>
                 <BrowserRouter>
                     <Switch>
                         <Route exact path={'/'} component={HomePage}/>
-                        <Route path={'/patient'} component={Patient}/>
-                        <Route path={'/result/:choice'} component={Result}/>
+                        <Route path={'/login'} component={Login}/>
+                        <Route path={'/createEvent'} component={CreateCompetition}/>
                     </Switch>
                 </BrowserRouter>
             </div>

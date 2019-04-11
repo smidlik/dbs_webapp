@@ -1,3 +1,3 @@
-import Content from './Content';
+import CreateCompForm from './CreateCompForm';
 
-export default Content;
+export default {CreateCompForm};

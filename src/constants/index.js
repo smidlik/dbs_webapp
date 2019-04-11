@@ -1,6 +1,6 @@
 export const appName = 'FireCompetitions.cz';
 
-export const patientsUrl = 'https://owe2019.herokuapp.com/patient';
+export const const0 = '';
 
-export const resultUrl = 'https://owe2019.herokuapp.com/result';
+export const const1 = '';
 

@@ -1,5 +1,8 @@
 import HomePage from './HomePage';
-import Result from './Result';
-import Patient from './Patient';
+import Login from './Login';
+import CreateCompetition from './CreateCompetition'
 
-export { HomePage, Result, Patient };
+
+
+
+export { HomePage, Login, CreateCompetition };

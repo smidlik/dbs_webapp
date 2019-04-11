@@ -1,18 +1,17 @@
 import React from 'react';
-import AppName from './AppName/AppName';
 import { appName } from '../../constants';
-import {Button, Form, FormControl, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Button, Nav, Navbar, NavDropdown} from "react-bootstrap";
 
-class ApplicationBar extends React.Component {
+class NavBar extends React.Component {
     render() {
         return (
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home"><AppName name={ appName } /></Navbar.Brand>
+            <Navbar  bg="danger" variant="dark" expand="lg">
+                <Navbar.Brand href="/">{ appName } </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/createEvent">Link</Nav.Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -21,14 +20,11 @@ class ApplicationBar extends React.Component {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-success">Search</Button>
-                    </Form>
+                    <Button variant={"secondary"} href={'/login'}>Login</Button>
                 </Navbar.Collapse>
             </Navbar>
         );
     }
 }
 
-export default ApplicationBar;
+export default NavBar;
