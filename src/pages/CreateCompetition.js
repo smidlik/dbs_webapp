@@ -1,12 +1,12 @@
 import React from 'react';
-import HomePageContent from '../components/Content';
+import CreateCompForm from "../components/Content/CreateCompForm";
 
 
 class CreateCompetition extends React.Component {
 
     render() {
         return (
-            <HomePageContent />
+            <CreateCompForm />
         );
     }
 }
